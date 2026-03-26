@@ -1,0 +1,65 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #111;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #000;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.container {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.project-card {
+    margin: 20px;
+    padding: 20px;
+    background: #222;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s;
+}
+
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+form input, form textarea {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
